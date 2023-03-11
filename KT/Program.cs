@@ -19,7 +19,6 @@ void PrintArray(string[] array)
     {
         Console.Write($"{array[i]} ");
     }
-    Console.WriteLine();
 }
 
 Console.Clear();
