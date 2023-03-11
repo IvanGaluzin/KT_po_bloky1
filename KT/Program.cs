@@ -21,3 +21,13 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
+
+Console.Clear();
+
+Console.Write("Введите масив через пробел: ");
+string[] array1 = Array.ConvertAll(Console.ReadLine()!.Split(' '), Convert.ToString)!;
+
+string[] array2 = new string[array1.Length];
+SecondArrayWithIF(array1, array2);
+
+PrintArray(array2);
